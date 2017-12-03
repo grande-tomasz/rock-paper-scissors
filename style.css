@@ -1,8 +1,27 @@
-body {
+body,
+h1 {
   margin: 0;
   padding: 0;
 }
+h1 {
+  font-weight: bold;
+}
 
 .container {
-  padding-bottom: 2rem;
+  width: 50rem;
+  padding: 2rem 0;
+  border: 1px dotted black;
+}
+
+.name,
+.win {
+  font-weight: bold;
+}
+
+#currentResultDiv {
+  font-size: 2rem;
+}
+
+div[class*="col-"] {
+  border: 1px dashed gray;
 }

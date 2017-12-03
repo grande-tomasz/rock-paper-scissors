@@ -11,87 +11,77 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <!-- WELCOME -->
     <div class="container">
-      <h3 class="text-center">
-        Welcome to the game
+      <h1 class="text-center">
+        Welcome to the game<br>
         <span class="label label-default">Rock</span>
-        <span class="label label-primary">Paper</span>
-        <span class="label label-danger">Scissors</span>
-      </h3>
+        <span class="label label-default">Paper</span>
+        <span class="label label-default">Scissors</span>
+      </h1>
     </div>
-    <div id="js-newGameElement" class="container">
+    <!-- NEW GAME -->
+    <div id="newGameDiv" class="container">
       <div class="row text-center">
-        <button  id="js-newGameButton" class="btn btn-default">
+        <button  id="newGameBtn" class="btn btn-primary btn-lg">
           New game
         </button>
       </div>
     </div>
-    <div id="js-playerPickElement" class="container">
+    <!-- PLAYER PICK -->
+    <div id="playerPickDiv" class="container">
       <div class="row text-center">
-        <button id="js-playerPick_rock" class="btn">
+        <button id="playerPickBtnRock" class="btn btn-success btn-lg">
           <span class="badge">
             <i class="fa fa-hand-rock-o" aria-hidden="true"></i>
           </span>
           Rock
         </button>
-        <button id="js-playerPick_paper"  class="btn">
+        <button id="playerPickBtnPaper"  class="btn btn-warning btn-lg">
           <span class="badge">
-          <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+            <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
           </span>
           Paper
         </button>
-        <button id="js-playerPick_scissors"  class="btn">
+        <button id="playerPickBtnScissors"  class="btn btn-danger btn-lg">
           <span class="badge">
-          <i class="fa fa-hand-scissors-o" aria-hidden="true"></i>
+            <i class="fa fa-hand-scissors-o" aria-hidden="true"></i>
           </span>
           Scissors
         </button>
       </div>
     </div>
-    <div id="js-resultsTableElement" class="container">
+    <!-- CURRENT RESULT -->
+    <div id="currentResultDiv" class="container">
       <div class="row">
-        <div class="col-xs-5 text-center">
-          <span id="js-playerPoints" class="badge">
-          0
-          </span>
-          <span id="js-playerName">
-          Player Name
-          </span>
+        <div class="col-xs-6 text-center">
+          <span id="playerNameSpan" class="name">Player Name</span>
+          <span id="playerPointsSpan" class="badge">0</span>
         </div>
-        <div class="col-xs-2 text-center">
-          VS.
-        </div>
-        <div class="col-xs-5 text-center">
-          <span id="js-computerPoints" class="badge">
-          0
-          </span>
-          Computer
+        <!-- <div class="col-xs-2 text-center">
+          VS
+        </div> -->
+        <div class="col-xs-6 text-center">
+          <span class="name">Computer</span>
+          <span id="computerPointsSpan" class="badge">0</span>
         </div>
       </div>
       <div class="row">
-        <div class="col-xs-5 text-center">
-          <span id="js-playerPick">
-            Player selection
-          </span>
+        <div class="col-xs-6 text-center">
+          <span id="playerSelectionSpan"></span>
         </div>
-        <div class="col-xs-2"></div>
-        <div class="col-xs-5 text-center">
-          <span id="js-computerPick">
-            Computer selection
-          </span>
+        <!-- <div class="col-xs-2"></div> -->
+        <div class="col-xs-6 text-center">
+          <span id="computerSelectionSpan"></span>
         </div>
       </div>
       <div class="row">
-        <div class="col-xs-5 text-center">
-          <span id="js-playerResult">
-            Player Score
-          </span>
+        <div class="col-xs-6 text-center">
+          <span id="playerResultSpan"></span>
         </div>
-        <div class="col-xs-2"></div>
-        <div class="col-xs-5 text-center">
-          <span id="js-computerResult">
-            Computer Score
-          </span>
+        <!-- <div class="col-xs-2"></div> -->
+        <div class="col-xs-6 text-center">
+          <span id="computerResultSpan"></span>
         </div>
       </div>
     </div>
